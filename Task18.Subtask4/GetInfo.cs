@@ -28,9 +28,9 @@ namespace Task18.Subtask4
             var streamInfo = streamManifest.Result.GetMuxedStreams().GetWithHighestVideoQuality();
 
             Console.WriteLine(new string('-', Console.BufferWidth));
-            Console.Write($"Видео: \"{video.Title}\"");
-            Console.Write($" с канала: \"{video.Author}\"");
-            Console.WriteLine($" размером: {streamInfo.Size}");
+            Console.WriteLine($"Видео: \"{video.Title}\"");
+            Console.WriteLine($"Канал: \"{video.Author}\"");
+            Console.WriteLine($"Размер: {streamInfo.Size}");
             Console.WriteLine(new string('-', Console.BufferWidth));
         }
     }

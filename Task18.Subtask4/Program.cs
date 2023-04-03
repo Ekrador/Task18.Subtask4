@@ -45,7 +45,7 @@ namespace Task18.Subtask4
 
         static string GetUrl()
         {
-            Console.WriteLine("Введите ссылку на Youtube-видео для скачивания или клавишу \"Esc\" для выхода");
+            Console.WriteLine("Введите ссылку на Youtube-видео для скачивания или нажмите клавишу \"Esc\" для выхода");
             if(Console.ReadKey().Key == ConsoleKey.Escape) { Environment.Exit(0); }
             return Console.ReadLine();
         }
